@@ -6,7 +6,7 @@ from huggingface_hub import login  # For authenticating with HuggingFace
 import torch  # For handling model computations
 
 # HuggingFace token for model use validation
-login(token="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", add_to_git_credential=True)
+login(token="HUGGINGFACEHUB_API_TOKEN", add_to_git_credential=True)
 
 def initialize_model():
 
@@ -14,7 +14,7 @@ def initialize_model():
     model_name = "mistralai/Mistral-7B-Instruct-v0.2"
     
     # Loading the tokenizer for the model 
-    tokenizer = AutoTokenizer.from_pretrained(model_name, token="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")
+    tokenizer = AutoTokenizer.from_pretrained(model_name, token="HUGGINGFACEHUB_API_TOKEN")
     
     # Using oprimizations
    
@@ -22,7 +22,7 @@ def initialize_model():
         model_name,
         torch_dtype=torch.float32, #torch_dtype=torch.float32 for CPU 
         device_map="auto", # device_map="auto" places the model on GPU/CPU 
-        token="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"
+        token="HUGGINGFACEHUB_API_TOKEN"
     )
 
     # Create a text generation pipeline with the model and tokenizer
