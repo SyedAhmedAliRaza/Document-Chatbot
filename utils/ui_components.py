@@ -103,7 +103,7 @@ def render_chat_interface():
         if st.button("Clear Chat History", key="clear_history"):
             st.session_state.chat_history = []
             st.session_state.vector_store = False
-            st.markdown("<span style='color: #FF6200;'>Chat history and vector store cleared!</span>", unsafe_allow_html=True)
+            st.markdown("<span style='color: #FF6200;'>Chat history cleared!</span>", unsafe_allow_html=True)
         st.markdown("<hr style='border-color: #FF6200;'>", unsafe_allow_html=True)
         
         st.markdown("<p style='color: #FF6200;'>AI Document Chatbot v2.0<br>Powered by Mistral</p>", unsafe_allow_html=True)
