@@ -33,10 +33,10 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 3. **Install dependencies**:<br>
    pip install -r requirements.txt
 
- 4. **Login to Hugging Face CLI**:<br>  
+ 4. **Login to Hugging Face CLI**:
     huggingface-cli login --token <your_token>
 
- 5. **Run the app**:<br>  
+ 5. **Run the app**:
     streamlit run app.py
 
 
