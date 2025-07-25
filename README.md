@@ -1,7 +1,7 @@
 # 📄 AI Document Chatbot
 
 AI Document Chatbot is a Streamlit-based web application that allows users to upload documents (PDF, DOCX, TXT) and interact with them using natural language queries. The app leverages a Retrieval-Augmented Generation (RAG) pipeline powered by the Mistral-7B-Instruct model to provide accurate answers from the uploaded files.
-
+---
 ## 🚀 Features
 
 - Upload multiple documents and ask about them
@@ -9,7 +9,7 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 - Contextual question-answering using RAG pipeline
 - Clean and responsive user interface with chat history
 - Powered by open-source Hugging Face models
-
+---
 ## 🛠️ Tech Stack
 
 - [Python](https://www.python.org/)
@@ -19,7 +19,7 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 - [PyTorch](https://pytorch.org/)
 - [Hugging Face Hub](https://huggingface.co/)
 - Mistral-7B-Instruct-v0.2 (LLM)
-
+---
 ## 💻 How to Run Locally
 
 Follow these steps to run the project on your local machine:
