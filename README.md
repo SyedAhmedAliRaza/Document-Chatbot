@@ -4,7 +4,7 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 
 ## 🚀 Features
 
-- Upload multiple documents and chat with them
+- Upload multiple documents and ask about them
 - Extracts text from documents using advanced NLP techniques
 - Contextual question-answering using RAG pipeline
 - Clean and responsive user interface with chat history
