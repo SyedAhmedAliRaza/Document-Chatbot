@@ -44,7 +44,7 @@ Follow these steps to run the project on your local machine:
 
  ### 5. **Run the app**<br>
  
-   -> streamlit run app.py
+   -> streamlit run app.py<br>
    Open [http://localhost:8501](http://localhost:8501) with your browser to see the result.
 
 
