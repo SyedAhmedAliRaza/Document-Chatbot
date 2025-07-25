@@ -22,27 +22,29 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 
 ## 💻 How to Run Locally
 
-###1. **Clone the repository**<br>
+Follow these steps to run the project on your local machine:
 
-      -> git clone https://github.com/SyedAhmedAliRaza/Document-Chatbot.git<br>
-      -> cd Document-Chatbot
+### 1. **Clone the repository**<br>
 
-###2. **Create a virtual environment**<br>
+   -> git clone https://github.com/SyedAhmedAliRaza/Document-Chatbot.git<br>
+   -> cd Document-Chatbot
 
-      -> python -m venv venv<br>
-      -> source venv/bin/activate
+### 2. **Create a virtual environment**<br>
+
+   -> python -m venv venv<br>
+   -> source venv/bin/activate
           
-###3. **Install dependencies**<br>
+### 3. **Install dependencies**<br>
 
-      -> pip install -r requirements.txt
+   -> pip install -r requirements.txt
 
- ###4. **Login to Hugging Face CLI**<br>
+ ### 4. **Login to Hugging Face CLI**<br>
  
-      -> huggingface-cli login --token <your_token>
+   -> huggingface-cli login --token <your_token>
 
- ###5. **Run the app**<br>
+ ### 5. **Run the app**<br>
  
-       -> streamlit run app.py
-          Open [http://localhost:8501](http://localhost:8501) with your browser to see the result.
+   -> streamlit run app.py
+   Open [http://localhost:8501](http://localhost:8501) with your browser to see the result.
 
 
