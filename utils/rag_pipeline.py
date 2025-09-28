@@ -11,7 +11,7 @@ login(token="HUGGINGFACEHUB_API_TOKEN", add_to_git_credential=True)
 def initialize_model():
 
     # Defining the model 
-    model_name = "mistralai/Mistral-7B-Instruct-v0.2"
+    model_name = "meta-llama/Llama-3.2-1B-Instruct"
     
     # Loading the tokenizer for the model 
     tokenizer = AutoTokenizer.from_pretrained(model_name, token="HUGGINGFACEHUB_API_TOKEN")
