@@ -22,7 +22,7 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 - [Transformers](https://huggingface.co/docs/transformers/)
 - [PyTorch](https://pytorch.org/)
 - [Hugging Face Hub](https://huggingface.co/)
-- Mistral-7B-Instruct-v0.2 (LLM)
+- Llama-3.2-1B-Instruct (LLM)
   
 ---
 
