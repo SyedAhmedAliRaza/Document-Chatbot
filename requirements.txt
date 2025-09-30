@@ -10,4 +10,4 @@ python-docx
 sentence-transformers
 huggingface_hub 
 streamlit_chat 
-pyngrok==7.2.0 -q
+pyngrok==7.2.0 
