@@ -37,6 +37,6 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 
 Use the following link on Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/drive/1eqot5FEVAH_2Lot-uKvgAQH1_hSQsviG?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
 
 
