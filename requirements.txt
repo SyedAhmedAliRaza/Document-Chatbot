@@ -1,9 +1,13 @@
-streamlit==1.38.0
-langchain==0.3.2
-langchain-community==0.3.1
-transformers==4.44.2
-torch==2.7.1
-faiss-cpu==1.8.0
-PyPDF2==3.0.1
-python-docx==1.1.2
-sentence-transformers==3.1.1
+streamlit==1.38.0 
+langchain 
+langchain-community 
+transformers 
+torch 
+bitsandbytes 
+faiss-cpu 
+pdfplumber 
+python-docx 
+sentence-transformers
+huggingface_hub 
+streamlit_chat 
+pyngrok==7.2.0 -q
