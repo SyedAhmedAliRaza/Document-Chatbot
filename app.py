@@ -1,3 +1,4 @@
+%%writefile app.py
 import streamlit as st
 from utils.document_processor import process_documents
 from utils.rag_pipeline import initialize_model, query_rag
