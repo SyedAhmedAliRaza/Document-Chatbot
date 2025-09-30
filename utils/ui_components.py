@@ -1,3 +1,4 @@
+%%writefile utils/ui_components.py
 import streamlit as st
 from datetime import datetime
 
