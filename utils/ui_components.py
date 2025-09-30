@@ -1,13 +1,9 @@
-# Importing libraries for the Streamlit UI
-import streamlit as st # From streamlit folder -> config.toml
-from datetime import datetime  # For adding timestamps to messages
+import streamlit as st
+from datetime import datetime
 
 def render_chat_interface():
-
-    # Adding custom CSS for styling the interface
     st.markdown("""
         <style>
-        /* General app styling */
         .stApp {
             background: linear-gradient(135deg, #FFFFFF 0%, #FFC107 30%, #FFFFFF 100%);
         }
@@ -95,25 +91,20 @@ def render_chat_interface():
         </style>
     """, unsafe_allow_html=True)
 
-    # Creating a sidebar for settings
     with st.sidebar:
-        st.markdown("<div class='sidebar-content'>", unsafe_allow_html=True)
-        st.markdown("<h2 style='color: #FF6200;'>Settings</h2>", unsafe_allow_html=True)
-        # Creating a button to clear chat history and vector store
+       
+        st.markdown("<h1 style='color: #FF6200;'>Settings</h1>", unsafe_allow_html=True)
         if st.button("Clear Chat History", key="clear_history"):
             st.session_state.chat_history = []
-            st.session_state.vector_store = False
+            st.session_state.vector_store = None
             st.markdown("<span style='color: #FF6200;'>Chat history cleared!</span>", unsafe_allow_html=True)
         st.markdown("<hr style='border-color: #FF6200;'>", unsafe_allow_html=True)
-        
-        st.markdown("<p style='color: #FF6200;'>AI Document Chatbot v2.0<br>Powered by Mistral</p>", unsafe_allow_html=True)
+        st.markdown("<p style='color: #FF6200;'>AI Document Chatbot v2.0<br>Powered by Llama</p>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
-    # Displaying the main title and description
     st.markdown("<h1 class='stTitle' >📄 AI Document Chatbot</h1>", unsafe_allow_html=True)
     st.markdown("<p style='color: #FF6200;'>Upload documents and ask questions with AI assistance.</p>", unsafe_allow_html=True)
 
-    # File uploader for documents
     uploaded_files = st.file_uploader(
         "Upload Documents",
         accept_multiple_files=True,
@@ -127,13 +118,11 @@ def render_chat_interface():
             st.markdown(f"<span style='color: #FF6200;'>{file.name}</span> <span class='file-type-badge'>{file_type}</span>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
-    # Initializing session state for chat history and vector store
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
     if "vector_store" not in st.session_state:
-        st.session_state.vector_store = False
-        
-    # Displaying chat history
+        st.session_state.vector_store = None
+
     st.subheader("Chat History", divider="orange")
     chat_container = st.container(border=True)
     with chat_container:
@@ -142,17 +131,12 @@ def render_chat_interface():
                 st.markdown(message["content"])
                 st.markdown(f"<div class='timestamp'>{message['timestamp']}</div>", unsafe_allow_html=True)
 
-    # User input
     user_input = st.chat_input("Type your question here...")
-
     return uploaded_files, user_input
 
 def display_message(role, content):
-
-    # Getting the current timestamp
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with st.chat_message(role):
         st.markdown(content)
         st.markdown(f"<div class='timestamp'>{timestamp}</div>", unsafe_allow_html=True)
-    # Stores the message in chat history
     st.session_state.chat_history.append({"role": role, "content": content, "timestamp": timestamp})
