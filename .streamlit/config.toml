@@ -1,6 +1,6 @@
 [theme]
-primaryColor="#FF6200"          # Vibrant orange for buttons and highlights
-backgroundColor="#F5F5F5"       # Off-white for a clean, light background
-secondaryBackgroundColor="#FFFFF"  # Light gray for containers
-textColor="#333333"             # Dark gray for readable text
-font="sans serif"               # Modern sans-serif font
+primaryColor="#FF6200"
+backgroundColor="#F5F5F5"
+secondaryBackgroundColor="#FFFFFF"
+textColor="#333333"
+font="sans serif"
