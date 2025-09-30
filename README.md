@@ -17,18 +17,18 @@ AI Document Chatbot is a Streamlit-based web application that allows users to up
 ## 🛠️ Tech Stack  
 
 - [Python](https://www.python.org/)  
-- [Streamlit](https://streamlit.io/) (`streamlit==1.38.0`)  
-- [LangChain](https://www.langchain.com/) (`langchain`, `langchain-community`)  
-- [Transformers](https://huggingface.co/docs/transformers/) (`transformers`)  
-- [PyTorch](https://pytorch.org/) (`torch`)  
-- [Hugging Face Hub](https://huggingface.co/) (`huggingface_hub`)  
-- [Sentence Transformers](https://www.sbert.net/) (`sentence-transformers`)  
-- [FAISS](https://faiss.ai/) (`faiss-cpu`)  
-- [BitsAndBytes](https://github.com/TimDettmers/bitsandbytes) (`bitsandbytes`)  
-- [PDFPlumber](https://github.com/jsvine/pdfplumber) (`pdfplumber`)  
-- [python-docx](https://python-docx.readthedocs.io/) (`python-docx`)  
-- [Streamlit Chat](https://github.com/AI-Yash/st-chat) (`streamlit_chat`)  
-- [pyngrok](https://pyngrok.readthedocs.io/) (`pyngrok==7.2.0`)  
+- [Streamlit](https://streamlit.io/) 
+- [LangChain](https://www.langchain.com/) 
+- [Transformers](https://huggingface.co/docs/transformers/) 
+- [PyTorch](https://pytorch.org/) 
+- [Hugging Face Hub](https://huggingface.co/) 
+- [Sentence Transformers](https://www.sbert.net/) 
+- [FAISS](https://faiss.ai/) 
+- [BitsAndBytes](https://github.com/TimDettmers/bitsandbytes) 
+- [PDFPlumber](https://github.com/jsvine/pdfplumber) 
+- [python-docx](https://python-docx.readthedocs.io/) 
+- [Streamlit Chat](https://github.com/AI-Yash/st-chat)
+- [pyngrok](https://pyngrok.readthedocs.io/)  
 - **LLM:** Llama-3.2-1B-Instruct
   
 ---
