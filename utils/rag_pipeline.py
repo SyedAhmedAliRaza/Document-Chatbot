@@ -1,3 +1,4 @@
+%%writefile utils/rag_pipeline.py
 from langchain_huggingface import HuggingFacePipeline
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from langchain.prompts import PromptTemplate
