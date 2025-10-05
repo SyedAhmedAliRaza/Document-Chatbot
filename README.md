@@ -1,6 +1,6 @@
 # 📄 AI Document Chatbot
 
-AI Document Chatbot is a Streamlit-based web application that allows users to upload documents (PDF, DOCX, TXT) and interact with them using natural language queries. The app leverages a Retrieval-Augmented Generation (RAG) pipeline powered by the Mistral-7B-Instruct model to provide accurate answers from the uploaded files.
+AI Document Chatbot is a Streamlit-based web application that allows users to upload documents (PDF, DOCX, TXT) and interact with them using natural language queries. The app leverages a Retrieval-Augmented Generation (RAG) pipeline powered by the Llama-3.2-1B-Instruct model to provide accurate answers from the uploaded files.
 
 ---
 
